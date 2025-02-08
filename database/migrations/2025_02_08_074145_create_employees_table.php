@@ -22,7 +22,7 @@ class CreateEmployeesTable extends Migration
             $table->date('end_date')->nullable();
             $table->string('photo')->nullable();
             $table->json('documents')->nullable();
-            $table->json('identity')->nullable();
+            $table->json('identities')->nullable();
             $table->timestamps();
 
             $table->index('department');
