@@ -12,12 +12,12 @@ class Employee extends Model
     protected $fillable = [
         'name', 'email', 'phone', 'date_of_birth',
         'job_title', 'department', 'salary', 'start_date', 'end_date',
-        'photo', 'documents','identity'
+        'photo', 'documents','identities'
     ];
 
     protected $casts = [
         'documents' => 'array',
-        'identity' => 'array',
+        'identities' => 'array',
         'date_of_birth' => 'date',
         'start_date'    => 'date',
         'end_date'      => 'date',
