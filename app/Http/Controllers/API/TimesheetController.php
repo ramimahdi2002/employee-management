@@ -16,7 +16,7 @@ class TimesheetController extends Controller
             $query->where('employee_id', $request->employee_id);
         }
 
-        $timesheets = $query->paginate(10);
+        $timesheets = $query->paginate(5);
         return response()->json($timesheets);
     }
 

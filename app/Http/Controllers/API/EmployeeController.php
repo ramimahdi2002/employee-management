@@ -16,7 +16,7 @@ class EmployeeController extends Controller
             $query->where('department', $request->department);
         }
 
-        $employees = $query->paginate(10);
+        $employees = $query->paginate(5);
         return response()->json($employees);
     }
 
